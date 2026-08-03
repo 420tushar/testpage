@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TruAyur 11-Herb Hair Serum — Salon-Smooth Hair Without the Grease</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  /* Label-pulled palette */
+  --navy:#1B2340;
+  --navy-90:rgba(27,35,64,0.90);
+  --navy-60:rgba(27,35,64,0.60);
+  --navy-15:rgba(27,35,64,0.12);
+  --pink:#C8366B;
+  --pink-light:#E05585;
+  --pink-pale:#FAE8EF;
+  --cream:#FBF7F9;
+  --cream-mid:#F2E4EC;
+
+  /* Semantic remaps — keeps all existing CSS working */
+  --obsidian:var(--navy);
+  --obsidian-80:var(--navy-90);
+  --obsidian-40:var(--navy-60);
+  --obsidian-10:var(--navy-15);
+  --sand:var(--cream-mid);
+  --sand-deep:#D4B4C6;
+  --sand-light:var(--cream);
+  --forest:var(--pink);
+  --forest-light:var(--pink-light);
+  --gold:#C9992A;
+  --gold-light:#E0B84A;
+  --white:#FFFFFF;
+  --off-white:var(--pink-pale);
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Inter',sans-serif;background:var(--white);color:var(--obsidian);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+
+.w{max-width:1100px;margin:0 auto;padding:0 40px;}
+@media(max-width:600px){.w{padding:0 20px;}}
+
+/* ── STICKY ── */
+.sticky{
+  position:fixed;top:0;left:0;right:0;z-index:300;
+  background:var(--white);border-bottom:1px solid var(--obsidian-10);
+  padding:14px 40px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.sticky-name{font-size:13px;font-weight:600;letter-spacing:0.04em;color:var(--obsidian);}
+.sticky-trust{font-size:12px;color:var(--obsidian-40);}
+.sticky-btn{
+  background:var(--navy);color:var(--white);
+  font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;
+  padding:12px 28px;border:none;cursor:pointer;flex-shrink:0;transition:background .2s;
+}
+.sticky-btn:hover{background:var(--forest);}
+@media(max-width:600px){.sticky-trust{display:none;}.sticky{padding:12px 20px;}}
+
+/* ── HERO ── */
+.hero{
+  background:var(--navy);
+  min-height:100vh;
+  padding:90px 0 0;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  position:relative;overflow:hidden;
+}
+.hero-bg-text{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-54%);
+  font-family:'Playfair Display',serif;font-size:clamp(120px,20vw,240px);
+  font-weight:700;color:rgba(255,255,255,0.04);white-space:nowrap;pointer-events:none;
+  letter-spacing:-0.02em;line-height:1;user-select:none;
+}
+.hero-inner{
+  display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:end;
+  padding-bottom:0;
+}
+@media(max-width:820px){.hero-inner{grid-template-columns:1fr;}}
+.hero-copy{padding-bottom:80px;}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-size:11px;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;
+  color:var(--pink-light);margin-bottom:36px;
+}
+.hero-eyebrow::before{content:'';width:32px;height:1px;background:var(--pink);}
+.hero h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(44px,6vw,80px);
+  font-weight:400;line-height:1.02;color:var(--white);
+  margin-bottom:28px;
+}
+.hero h1 em{font-style:italic;color:var(--gold-light);}
+.hero-desc{
+  font-size:17px;line-height:1.72;color:rgba(250,250,248,0.60);
+  max-width:500px;margin-bottom:44px;
+}
+.hero-cta-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-bottom:44px;}
+.btn-primary{
+  display:inline-block;background:var(--white);color:var(--obsidian);
+  font-size:12px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;
+  padding:18px 44px;border:none;cursor:pointer;transition:all .2s;
+}
+.btn-primary:hover{background:var(--gold);color:var(--white);}
+.btn-ghost{
+  display:inline-block;
+  font-size:12px;font-weight:600;letter-spacing:0.06em;
+  color:rgba(250,250,248,0.50);padding:18px 0;
+  border-bottom:1px solid rgba(250,250,248,0.20);transition:color .2s;
+}
+.btn-ghost:hover{color:var(--white);}
+.hero-proof{
+  display:flex;gap:32px;flex-wrap:wrap;
+  padding-top:28px;border-top:1px solid rgba(250,250,248,0.10);
+}
+.hero-proof-item{font-size:12px;color:rgba(250,250,248,0.40);display:flex;align-items:center;gap:7px;}
+.hero-proof-item span{color:rgba(250,250,248,0.80);font-weight:600;}
+.hero-img-col{display:flex;align-items:flex-end;justify-content:center;}
+.hero-img-col img{max-width:300px;filter:drop-shadow(0 50px 80px rgba(0,0,0,0.60));}
+@media(max-width:820px){.hero-img-col{display:none;}}
+.hero-ticker{
+  background:var(--forest);padding:14px 40px;
+  display:flex;gap:60px;overflow:hidden;white-space:nowrap;
+}
+.ticker-track{display:flex;gap:60px;animation:ticker 18s linear infinite;}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.ticker-item{
+  font-size:11px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;
+  color:rgba(237,230,216,0.70);display:flex;align-items:center;gap:16px;flex-shrink:0;
+}
+.ticker-item::after{content:'·';color:var(--gold);}
+
+/* ── PROBLEM ── */
+.problem{background:var(--sand-light);padding:100px 0;}
+.problem-inner{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:start;}
+@media(max-width:820px){.problem-inner{grid-template-columns:1fr;gap:56px;}}
+.section-eye{
+  font-size:11px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;
+  color:var(--forest);margin-bottom:22px;display:flex;align-items:center;gap:10px;
+}
+.section-eye::before{content:'';width:28px;height:1px;background:var(--forest);}
+.problem h2{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,4vw,48px);font-weight:400;line-height:1.1;margin-bottom:22px;
+}
+.problem h2 em{font-style:italic;color:var(--forest);}
+.problem-lead{font-size:16px;line-height:1.75;color:var(--obsidian-80);}
+.problem-cards{display:flex;flex-direction:column;gap:3px;}
+.problem-card{background:var(--white);padding:28px 32px;}
+.problem-card-head{
+  font-size:11px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--obsidian-40);margin-bottom:10px;
+}
+.problem-card h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:400;margin-bottom:8px;line-height:1.3;}
+.problem-card h4 em{font-style:italic;}
+.problem-card p{font-size:14px;line-height:1.70;color:var(--obsidian-80);}
+
+/* ── SPLIT / BEFORE-AFTER ── */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:70vh;}
+@media(max-width:700px){.split{grid-template-columns:1fr;min-height:auto;}}
+.split-left{
+  background:var(--sand-deep);
+  padding:80px 56px;display:flex;flex-direction:column;justify-content:center;
+}
+.split-right{
+  background:var(--navy);
+  padding:80px 56px;display:flex;flex-direction:column;justify-content:center;
+}
+@media(max-width:700px){.split-left,.split-right{padding:60px 28px;}}
+.split-tag{
+  font-size:10px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;
+  margin-bottom:36px;
+}
+.split-left .split-tag{color:var(--obsidian-40);}
+.split-right .split-tag{color:rgba(237,230,216,0.50);}
+.split-left h3{
+  font-family:'Playfair Display',serif;font-size:clamp(26px,3.2vw,38px);
+  font-weight:400;line-height:1.15;margin-bottom:32px;color:var(--obsidian);
+}
+.split-right h3{
+  font-family:'Playfair Display',serif;font-size:clamp(26px,3.2vw,38px);
+  font-weight:400;line-height:1.15;margin-bottom:32px;color:var(--cream);
+}
+.split-right h3 em,.split-left h3 em{font-style:italic;}
+.split-right h3 em{color:var(--gold-light);}
+.split-list{display:flex;flex-direction:column;gap:14px;}
+.split-item{font-size:14.5px;line-height:1.55;display:flex;gap:12px;}
+.split-left .split-item{color:var(--obsidian-80);}
+.split-right .split-item{color:rgba(237,230,216,0.78);}
+.split-left .split-item .ic{color:var(--obsidian-40);flex-shrink:0;font-size:13px;padding-top:1px;}
+.split-right .split-item .ic{color:var(--gold);flex-shrink:0;font-size:13px;padding-top:1px;}
+
+/* ── SERUM SCIENCE ── */
+.science{background:var(--white);padding:100px 0;}
+.science-head{max-width:680px;margin-bottom:72px;}
+.science-head .section-eye{margin-bottom:22px;}
+.science-head h2{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,50px);font-weight:400;line-height:1.1;}
+.science-head h2 em{font-style:italic;color:var(--forest);}
+.science-head p{font-size:16px;line-height:1.75;color:var(--obsidian-80);margin-top:20px;}
+.science-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+@media(max-width:820px){.science-grid{grid-template-columns:1fr;}}
+.science-card{background:var(--sand-light);padding:48px 36px;}
+.science-card-num{
+  font-family:'Playfair Display',serif;font-size:56px;font-weight:400;font-style:italic;
+  color:var(--sand-deep);line-height:1;margin-bottom:24px;
+}
+.science-card h3{font-family:'Playfair Display',serif;font-size:21px;font-weight:400;line-height:1.2;margin-bottom:14px;}
+.science-card h3 em{font-style:italic;color:var(--forest);}
+.science-card p{font-size:14px;line-height:1.72;color:var(--obsidian-80);}
+.science-card p strong{font-weight:700;color:var(--obsidian);}
+
+/* ── WHAT'S IN IT / 5 REASONS ── */
+.reasons{background:var(--sand-light);padding:100px 0;}
+.reasons-head{text-align:center;max-width:640px;margin:0 auto 72px;}
+.reasons-head .section-eye{justify-content:center;}
+.reasons-head h2{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,50px);font-weight:400;line-height:1.1;}
+.reasons-head h2 em{font-style:italic;color:var(--forest);}
+.reason-row{display:grid;grid-template-columns:380px 1fr;gap:0;margin-bottom:3px;background:var(--white);}
+.reason-row:nth-child(even) .reason-img{order:2;}
+@media(max-width:820px){
+  .reason-row{grid-template-columns:1fr;}
+  .reason-row:nth-child(even) .reason-img{order:0;}
+}
+.reason-img{overflow:hidden;min-height:320px;}
+.reason-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.reason-img:hover img{transform:scale(1.03);}
+.reason-body{padding:52px 56px;display:flex;flex-direction:column;justify-content:center;}
+@media(max-width:600px){.reason-body{padding:36px 24px;}}
+.reason-tag{font-size:10px;font-weight:700;letter-spacing:0.20em;text-transform:uppercase;color:var(--forest);margin-bottom:16px;}
+.reason-body h3{font-family:'Playfair Display',serif;font-size:clamp(22px,2.8vw,30px);font-weight:400;line-height:1.15;margin-bottom:18px;}
+.reason-body h3 em{font-style:italic;color:var(--forest);}
+.reason-body p{font-size:15px;line-height:1.75;color:var(--obsidian-80);}
+.reason-body p strong{color:var(--obsidian);font-weight:700;}
+.reason-herbs{
+  margin-top:24px;font-size:11px;font-weight:600;letter-spacing:0.12em;
+  text-transform:uppercase;color:var(--gold);
+  padding-top:20px;border-top:1px solid var(--obsidian-10);
+}
+
+/* ── MOMENTS / DAY IN LIFE ── */
+.moments{background:var(--navy);padding:100px 0;}
+.moments-head{max-width:560px;margin-bottom:64px;}
+.moments-head .section-eye{color:var(--gold);}
+.moments-head .section-eye::before{background:var(--gold);}
+.moments-head h2{font-family:'Playfair Display',serif;font-size:clamp(30px,4vw,48px);font-weight:400;line-height:1.1;color:var(--white);}
+.moments-head h2 em{font-style:italic;color:var(--gold-light);}
+.moments-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
+@media(max-width:820px){.moments-grid{grid-template-columns:1fr;}}
+.moment{background:rgba(237,230,216,0.05);padding:48px 36px;border-top:2px solid transparent;transition:border-color .3s;}
+.moment:nth-child(1){border-color:var(--gold);}
+.moment:nth-child(2){border-color:var(--forest-light);}
+.moment:nth-child(3){border-color:rgba(237,230,216,0.30);}
+.moment-time{font-size:10px;font-weight:700;letter-spacing:0.20em;text-transform:uppercase;color:rgba(237,230,216,0.38);margin-bottom:20px;}
+.moment h3{font-family:'Playfair Display',serif;font-size:22px;font-weight:400;color:var(--sand);line-height:1.2;margin-bottom:16px;}
+.moment h3 em{font-style:italic;color:var(--gold-light);}
+.moment p{font-size:14px;line-height:1.75;color:rgba(237,230,216,0.62);}
+.moment p strong{color:var(--sand);font-weight:600;}
+
+/* ── EDITORIAL STATEMENT ── */
+.editorial{
+  background:var(--navy);
+  padding:120px 40px;text-align:center;
+  position:relative;overflow:hidden;
+}
+.editorial::before{
+  content:'';position:absolute;
+  top:-60px;right:-60px;width:400px;height:400px;border-radius:50%;
+  border:1px solid rgba(237,230,216,0.08);
+}
+.editorial::after{
+  content:'';position:absolute;
+  bottom:-100px;left:-80px;width:600px;height:600px;border-radius:50%;
+  border:1px solid rgba(237,230,216,0.05);
+}
+.editorial-inner{max-width:820px;margin:0 auto;position:relative;z-index:1;}
+.editorial-kicker{
+  font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;
+  color:rgba(237,230,216,0.45);margin-bottom:36px;
+}
+.editorial-line{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(30px,5vw,62px);font-weight:400;line-height:1.12;color:var(--sand);
+}
+.editorial-line em{font-style:italic;color:var(--gold-light);}
+.editorial-sub{
+  font-size:16px;color:rgba(237,230,216,0.55);line-height:1.75;
+  margin:32px auto 0;max-width:500px;
+}
+
+/* ── INGREDIENTS ── */
+.ingredients{background:var(--white);padding:100px 0;}
+.ingredients-head{text-align:center;max-width:640px;margin:0 auto 64px;}
+.ingredients-head h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.6vw,44px);font-weight:400;line-height:1.1;}
+.ingredients-head h2 em{font-style:italic;color:var(--forest);}
+.ingredients-head p{font-size:15px;color:var(--obsidian-80);line-height:1.65;margin-top:16px;}
+.ing-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;}
+@media(max-width:700px){.ing-grid{grid-template-columns:1fr;}}
+.ing-card{background:var(--sand-light);padding:36px 36px;display:grid;grid-template-columns:80px 1fr;gap:24px;align-items:start;}
+.ing-icon{
+  width:80px;height:80px;background:var(--white);
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  font-family:'Playfair Display',serif;font-size:11px;font-style:italic;
+  color:var(--obsidian-40);text-align:center;line-height:1.4;padding:8px;
+}
+.ing-body h4{font-family:'Playfair Display',serif;font-size:18px;font-weight:400;margin-bottom:4px;}
+.ing-latin{font-size:11px;font-style:italic;color:var(--obsidian-40);margin-bottom:10px;}
+.ing-body p{font-size:13.5px;line-height:1.65;color:var(--obsidian-80);}
+
+/* ── REVIEWS ── */
+.reviews{background:var(--sand-light);padding:100px 0;}
+.reviews-head{margin-bottom:56px;}
+.reviews-head .section-eye{margin-bottom:18px;}
+.reviews-head h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.6vw,44px);font-weight:400;line-height:1.1;max-width:440px;}
+.reviews-head h2 em{font-style:italic;color:var(--forest);}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+@media(max-width:820px){.reviews-grid{grid-template-columns:1fr;}}
+.review{background:var(--white);padding:36px 32px;}
+.review-stars{color:var(--gold);font-size:13px;letter-spacing:3px;margin-bottom:6px;}
+.review-tag{display:inline-block;font-size:9px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--forest);border:1px solid rgba(45,74,62,0.25);padding:4px 10px;margin-bottom:20px;}
+.review blockquote{font-family:'Playfair Display',serif;font-size:15.5px;font-weight:400;font-style:italic;line-height:1.68;color:var(--obsidian);margin-bottom:22px;}
+.review-name{font-size:11px;font-weight:700;letter-spacing:0.10em;text-transform:uppercase;color:var(--obsidian-40);}
+
+/* ── RITUAL ── */
+.ritual{background:var(--white);padding:100px 0;}
+.ritual-inner{display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center;}
+@media(max-width:820px){.ritual-inner{grid-template-columns:1fr;gap:56px;}}
+.ritual-copy .section-eye{margin-bottom:22px;}
+.ritual-copy h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.6vw,44px);font-weight:400;line-height:1.1;margin-bottom:18px;}
+.ritual-copy h2 em{font-style:italic;color:var(--forest);}
+.ritual-copy p{font-size:15px;line-height:1.75;color:var(--obsidian-80);margin-bottom:48px;}
+.ritual-steps{display:flex;flex-direction:column;gap:0;}
+.rstep{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:26px 0;border-bottom:1px solid var(--obsidian-10);align-items:start;}
+.rstep-num{font-family:'Playfair Display',serif;font-size:26px;font-style:italic;font-weight:400;color:var(--sand-deep);line-height:1;}
+.rstep h4{font-size:14px;font-weight:700;margin-bottom:5px;letter-spacing:0.02em;}
+.rstep p{font-size:13.5px;line-height:1.65;color:var(--obsidian-80);}
+.ritual-img-wrap{text-align:center;}
+.ritual-img-wrap img{max-width:320px;margin:0 auto;filter:drop-shadow(0 24px 40px rgba(15,15,15,0.12));}
+.ritual-img-cap{margin-top:20px;font-size:12px;font-style:italic;color:var(--obsidian-40);font-family:'Playfair Display',serif;}
+
+/* ── BUY BOX ── */
+.buybox{background:var(--navy);padding:100px 0;}
+.buybox-inner{display:grid;grid-template-columns:1fr 1.3fr;gap:80px;align-items:center;max-width:960px;margin:0 auto;}
+@media(max-width:820px){.buybox-inner{grid-template-columns:1fr;gap:48px;}}
+.buybox-img{text-align:center;}
+.buybox-img img{max-width:260px;margin:0 auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,0.50));}
+.buybox-copy .section-eye{color:var(--gold);}
+.buybox-copy .section-eye::before{background:var(--gold);}
+.buybox-name{font-family:'Playfair Display',serif;font-size:clamp(26px,3.2vw,38px);font-weight:400;color:var(--sand);line-height:1.15;margin-bottom:20px;}
+.buybox-price{font-family:'Playfair Display',serif;font-size:38px;font-weight:400;color:var(--white);margin-bottom:8px;}
+.buybox-price del{font-size:20px;color:rgba(250,250,248,0.28);text-decoration:line-through;margin-left:12px;}
+.buybox-offer{font-size:12px;color:var(--gold-light);margin-bottom:32px;font-weight:500;}
+.buybox-list{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:36px;}
+.buybox-list li{font-size:14px;color:rgba(250,250,248,0.70);display:flex;gap:10px;line-height:1.5;}
+.buybox-list li::before{content:'—';color:var(--gold);flex-shrink:0;}
+.buybox-cta{
+  display:block;text-align:center;background:var(--white);color:var(--obsidian);
+  font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  padding:20px 40px;border:none;cursor:pointer;width:100%;transition:background .2s;
+}
+.buybox-cta:hover{background:var(--gold);color:var(--white);}
+.buybox-meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:18px;}
+.buybox-meta-item{font-size:11px;color:rgba(250,250,248,0.38);display:flex;align-items:center;gap:6px;}
+.buybox-meta-item::before{content:'✓';color:var(--gold-light);}
+
+/* ── FAQ ── */
+.faq{background:var(--sand-light);padding:100px 0;}
+.faq-inner{max-width:740px;margin:0 auto;}
+.faq-inner h2{font-family:'Playfair Display',serif;font-size:clamp(28px,3.4vw,42px);font-weight:400;margin-bottom:48px;}
+.faq-inner h2 em{font-style:italic;color:var(--forest);}
+.faq-item{border-bottom:1px solid var(--obsidian-10);}
+.faq-btn{
+  width:100%;background:none;border:none;cursor:pointer;text-align:left;
+  padding:22px 0;display:flex;justify-content:space-between;align-items:center;gap:20px;
+  font-family:'Inter',sans-serif;font-size:15.5px;font-weight:600;color:var(--obsidian);
+}
+.faq-icon{font-size:22px;color:var(--forest);flex-shrink:0;transition:transform .22s;line-height:1;}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height .30s ease;}
+.faq-answer p{font-size:14.5px;line-height:1.75;color:var(--obsidian-80);padding-bottom:22px;}
+.faq-item.open .faq-answer{max-height:300px;}
+
+/* ── BRAND CLOSE ── */
+.brand-close{background:var(--sand);padding:100px 0;text-align:center;}
+.brand-close-line{font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,32px);font-weight:400;font-style:italic;color:var(--obsidian-80);margin-bottom:12px;}
+.brand-close-sub{font-size:13px;color:var(--obsidian-40);letter-spacing:0.10em;text-transform:uppercase;margin-bottom:48px;}
+.brand-nums{display:flex;justify-content:center;gap:60px;flex-wrap:wrap;margin-bottom:56px;}
+.brand-num-n{font-family:'Playfair Display',serif;font-size:48px;font-weight:400;color:var(--forest);line-height:1;}
+.brand-num-l{font-size:10px;font-weight:700;letter-spacing:0.16em;text-transform:uppercase;color:var(--obsidian-40);margin-top:6px;}
+.brand-close-cta{
+  display:inline-block;background:var(--navy);color:var(--white);
+  font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  padding:18px 52px;transition:background .2s;
+}
+.brand-close-cta:hover{background:var(--forest);}
+
+/* ══════════════════════════════════════
+   MOBILE — full pass at 480px and below
+══════════════════════════════════════ */
+@media(max-width:480px){
+
+  /* Global section padding reduction */
+  .problem, .science, .reasons, .moments,
+  .ingredients, .reviews, .ritual, .buybox,
+  .faq, .brand-close { padding: 64px 0; }
+
+  /* Sticky — truncate name */
+  .sticky-name { font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:140px; }
+  .sticky-btn { padding:10px 16px; font-size:10px; }
+
+  /* Hero — tighten up, don't waste 100vh on phone */
+  .hero { min-height:auto; padding:80px 0 0; }
+  .hero-copy { padding-bottom:48px; }
+  .hero h1 { font-size:clamp(36px,10vw,52px); margin-bottom:20px; }
+  .hero-desc { font-size:15px; margin-bottom:32px; }
+  .hero-eyebrow { margin-bottom:24px; }
+  .hero-cta-row { flex-direction:column; align-items:flex-start; gap:12px; margin-bottom:32px; }
+  .btn-primary { width:100%; text-align:center; padding:16px 24px; }
+  .btn-ghost { padding:12px 0; }
+  .hero-proof { gap:16px; }
+  .hero-proof-item { font-size:11px; }
+
+  /* Ticker — slightly smaller */
+  .hero-ticker { padding:12px 20px; }
+  .ticker-item { font-size:10px; }
+
+  /* Problem — single col padding */
+  .problem-inner { gap:40px; }
+  .problem-card { padding:22px 22px; }
+
+  /* Split section — reduce padding on mobile */
+  .split-left, .split-right { padding:52px 24px; }
+  .split-tag { margin-bottom:20px; }
+  .split-list { gap:12px; }
+  .split-item { font-size:13.5px; }
+
+  /* Science cards */
+  .science-card { padding:36px 28px; }
+  .science-card-num { font-size:44px; }
+
+  /* Reasons — image height reduced on mobile */
+  .reason-img { min-height:220px; }
+  .reason-body { padding:32px 20px; }
+  .reason-herbs { font-size:10px; }
+
+  /* Moments */
+  .moment { padding:36px 24px; }
+  .moment h3 { font-size:20px; }
+
+  /* Editorial — reduce side padding (already uses padding not .w) */
+  .editorial { padding:80px 24px; }
+  .editorial-line { font-size:clamp(26px,8vw,40px); }
+  .editorial-sub { font-size:14px; }
+
+  /* Ingredient cards — stack icon + text vertically on tiny screens */
+  .ing-card { grid-template-columns:1fr; gap:14px; padding:28px 22px; }
+  .ing-icon { width:60px; height:60px; font-size:10px; }
+
+  /* Reviews */
+  .review { padding:28px 22px; }
+  .review blockquote { font-size:14.5px; }
+
+  /* Ritual */
+  .ritual-inner { gap:40px; }
+  .ritual-copy p { margin-bottom:32px; }
+  .ritual-img-wrap img { max-width:220px; }
+  .rstep { padding:22px 0; }
+
+  /* Buy box */
+  .buybox-inner { gap:36px; }
+  .buybox-img img { max-width:200px; }
+  .buybox-name { font-size:28px; }
+  .buybox-price { font-size:30px; }
+  .buybox-cta { padding:18px 24px; }
+  .buybox-meta { gap:12px; }
+  .buybox-meta-item { font-size:10px; }
+  .offer-strip { font-size:12px; }
+
+  /* FAQ */
+  .faq-inner { padding:0 20px; }
+  .faq-btn { font-size:14px; }
+
+  /* Brand close */
+  .brand-nums { gap:36px; }
+  .brand-num-n { font-size:40px; }
+  .brand-close-cta { padding:16px 36px; font-size:11px; }
+  .brand-close-line { font-size:clamp(18px,5vw,26px); }
+}
+
+/* ══ Tablet tweaks 481–820px ══ */
+@media(min-width:481px) and (max-width:820px){
+  .problem, .science, .reasons, .moments,
+  .ingredients, .reviews, .ritual, .buybox,
+  .faq, .brand-close { padding: 80px 0; }
+
+  .hero-copy { padding-bottom:60px; }
+  .reason-img { min-height:260px; }
+  .split-left, .split-right { padding:64px 36px; }
+  .ing-card { padding:28px 28px; }
+  .editorial { padding:96px 32px; }
+}
+
+/* ── Navy-Pink palette accents ── */
+.hero-eyebrow{color:var(--pink-light);}
+.sticky-btn{background:var(--pink);}
+.sticky-btn:hover{background:var(--pink-light);}
+.btn-primary:hover{background:var(--pink);color:var(--white);}
+.section-eye{color:var(--pink);}
+.section-eye::before{background:var(--pink);}
+.reason-tag{color:var(--pink);}
+.reason-herbs{color:var(--pink);}
+.review-tag{color:var(--pink);border-color:rgba(200,54,107,0.30);}
+.review-stars{color:var(--pink);}
+.ing-latin{color:rgba(27,35,64,0.50);}
+.editorial-line em{color:var(--pink-light);}
+.editorial-kicker{color:rgba(251,247,249,0.50);}
+.editorial-sub{color:rgba(251,247,249,0.60);}
+.brand-num-n{color:var(--pink);}
+.brand-close-line{color:var(--navy-90);}
+.hero h1 em{color:var(--pink-light);}
+.problem h2 em{color:var(--pink);}
+.science-head h2 em{color:var(--pink);}
+.reasons-head h2 em{color:var(--pink);}
+.ritual-copy h2 em{color:var(--pink);}
+.reviews-head h2 em{color:var(--pink);}
+.split-right .split-item .ic{color:var(--pink-light);}
+.faq-icon{color:var(--pink);}
+.moment:nth-child(1){border-color:var(--pink);}
+.moment:nth-child(2){border-color:rgba(200,54,107,0.50);}
+.moments-head .section-eye{color:var(--pink-light);}
+.moments-head .section-eye::before{background:var(--pink-light);}
+.moment h3 em{color:var(--pink-light);}
+.buybox-copy .section-eye{color:var(--pink-light);}
+.buybox-copy .section-eye::before{background:var(--pink-light);}
+.buybox-meta-item::before{color:var(--pink-light);}
+.buybox-cta:hover{background:var(--pink);color:var(--white);}
+.brand-close-cta:hover{background:var(--pink);}
+.science-card-num{color:#D4B4C6;}
+.hero-proof-item span{color:rgba(250,246,248,0.90);}
+.split-right .split-tag{color:rgba(251,247,249,0.55);}
+.split-right p{color:rgba(251,247,249,0.70);}
+</style>
+</head>
+<body>
+
+<!-- STICKY -->
+<div class="sticky">
+  <span class="sticky-name">TruAyur · 11-Herb Hair Serum</span>
+  <span class="sticky-trust">Free Shipping · 30-Day Money-Back</span>
+  <a href="#buy" class="sticky-btn">Shop Now — $54</a>
+</div>
+
+<!-- ══════ HERO ══════ -->
+<section class="hero">
+  <div class="hero-bg-text">RITUAL</div>
+  <div class="w hero-inner">
+    <div class="hero-copy">
+      <span class="hero-eyebrow">Ayurvedic Hair Ritual · TruAyur</span>
+      <h1>Salon-Smooth Hair.<br><em>Powered by Ayurveda.</em></h1>
+      <p class="hero-desc">2 drops before you style. Instantly smooths the appearance of frizz, adds visible shine, and leaves hair feeling silky-soft — carrying 11 botanical herbs used in Ayurvedic hair rituals for 5,000 years. Without the greasy finish.</p>
+      <div class="hero-cta-row">
+        <a href="#buy" class="btn-primary">Add to Cart — $54</a>
+        <a href="#science" class="btn-ghost">See what's inside →</a>
+      </div>
+      <div class="hero-proof">
+        <div class="hero-proof-item"><span>4.9★</span> 128 reviews</div>
+        <div class="hero-proof-item"><span>11</span> Botanical herbs</div>
+        <div class="hero-proof-item"><span>Zero</span> Greasy finish</div>
+        <div class="hero-proof-item"><span>Free</span> Shipping</div>
+      </div>
+    </div>
+    <div class="hero-img-col">
+      <img src="https://truayur.com/cdn/shop/files/Photoroom_20250104_170436.png?v=1758178395" alt="TruAyur 11-Herb Hair Serum 60ml">
+    </div>
+  </div>
+  <div class="hero-ticker">
+    <div class="ticker-track">
+      <span class="ticker-item">Instantly smooths frizz</span>
+      <span class="ticker-item">Adds visible shine</span>
+      <span class="ticker-item">Leaves hair silky-soft</span>
+      <span class="ticker-item">No greasy finish</span>
+      <span class="ticker-item">11 Ayurvedic botanicals</span>
+      <span class="ticker-item">Damp or dry lengths</span>
+      <span class="ticker-item">Vegan · Cruelty-free</span>
+      <span class="ticker-item">Free shipping</span>
+      <span class="ticker-item">Instantly smooths frizz</span>
+      <span class="ticker-item">Adds visible shine</span>
+      <span class="ticker-item">Leaves hair silky-soft</span>
+      <span class="ticker-item">No greasy finish</span>
+      <span class="ticker-item">11 Ayurvedic botanicals</span>
+      <span class="ticker-item">Damp or dry lengths</span>
+      <span class="ticker-item">Vegan · Cruelty-free</span>
+      <span class="ticker-item">Free shipping</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ PROBLEM ══════ -->
+<section class="problem">
+  <div class="w problem-inner">
+    <div>
+      <span class="section-eye">The real problem</span>
+      <h2>Every "natural" hair serum<br>makes the <em>same trade-off.</em></h2>
+      <p class="problem-lead">Serums that actually work are pure silicone — great finish, nothing real inside. Serums that claim to be "natural" either don't perform or leave your hair looking greasy. You've been choosing between the two your whole life. TruAyur is what happens when nobody makes that trade-off.</p>
+    </div>
+    <div class="problem-cards">
+      <div class="problem-card">
+        <div class="problem-card-head">The silicone serum</div>
+        <h4>It works. But there's <em>nothing in it.</em></h4>
+        <p>Most anti-frizz serums work exactly as advertised — they smooth. What they don't do is nourish. The first ingredient is silicone. The botanicals, if any, are there in amounts too small to matter. You get a great finish and hair that still feels dry underneath.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-head">The "natural" alternative</div>
+        <h4>It has ingredients. But it <em>doesn't work.</em></h4>
+        <p>So you try the botanical one. Beautiful label, impressive ingredient list. And it's heavy, it looks greasy, your hair won't hold a style. Most women go back to the silicone serum within a week. The "natural" option hasn't earned the switch yet.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-card-head">What you actually want</div>
+        <h4>Both. In the <em>same bottle.</em></h4>
+        <p>A serum that smooths and shines like the silicone options — but actually has something real inside. 11 botanicals, not one and a fragrance. A finish that's weightless, not greasy. That's the product that didn't exist. Until this one.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ BEFORE / AFTER SPLIT ══════ -->
+<div class="split">
+  <div class="split-left">
+    <div class="split-tag">Every other serum</div>
+    <h3>Smooth hair.<br><em>Nothing else.</em></h3>
+    <div class="split-list">
+      <div class="split-item"><span class="ic">✗</span> 90% silicone, minimal botanicals</div>
+      <div class="split-item"><span class="ic">✗</span> Surface coating — nothing absorbed</div>
+      <div class="split-item"><span class="ic">✗</span> Frizz returns within hours</div>
+      <div class="split-item"><span class="ic">✗</span> Hair still feels dry underneath</div>
+      <div class="split-item"><span class="ic">✗</span> Second-day hair still rough and dull</div>
+      <div class="split-item"><span class="ic">✗</span> No heritage, no ritual, no depth</div>
+    </div>
+  </div>
+  <div class="split-right">
+    <div class="split-tag">TruAyur 11-Herb Hair Serum</div>
+    <h3>Smooth hair.<br><em>Plus 5,000 years of botanicals.</em></h3>
+    <div class="split-list">
+      <div class="split-item"><span class="ic">✓</span> Instantly smooths the appearance of frizz</div>
+      <div class="split-item"><span class="ic">✓</span> Adds visible shine — hair looks polished, not coated</div>
+      <div class="split-item"><span class="ic">✓</span> Leaves hair feeling genuinely silky-soft</div>
+      <div class="split-item"><span class="ic">✓</span> 11 herbs including Jatamansi, Ashwagandha, Lotus</div>
+      <div class="split-item"><span class="ic">✓</span> Lightweight — never greasy or sticky</div>
+      <div class="split-item"><span class="ic">✓</span> Damp or dry — works any time, any hair day</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ SERUM SCIENCE ══════ -->
+<section class="science" id="science">
+  <div class="w">
+    <div class="science-head">
+      <span class="section-eye">Why it works</span>
+      <h2>The serum base does the smoothing.<br>The <em>11 herbs do the rest.</em></h2>
+      <p>Most brands pick one. A silicone base for performance. Or botanicals for the story. TruAyur's formula was engineered to do both — a modern weightless serum base that carries 11 real Ayurvedic botanicals into every strand.</p>
+    </div>
+    <div class="science-grid">
+      <div class="science-card">
+        <div class="science-card-num">01</div>
+        <h3>The serum base controls frizz <em>immediately.</em></h3>
+        <p>Cyclopentasiloxane and dimethiconol create a weightless smoothing layer that controls frizz on contact and adds instant gloss. Same technology used by the serums already in your bathroom. <strong>This part you already trust.</strong></p>
+      </div>
+      <div class="science-card">
+        <div class="science-card-num">02</div>
+        <h3>The botanicals nourish in a way <em>silicone can't.</em></h3>
+        <p>Sweet almond, lotus, sesame, apricot kernel — these Ayurvedic oils penetrate the strand rather than just coating it. They make hair feel soft to the touch, not just smooth to the eye. <strong>The difference you feel by end of day.</strong></p>
+      </div>
+      <div class="science-card">
+        <div class="science-card-num">03</div>
+        <h3>The herbs are the part <em>no one else has.</em></h3>
+        <p>Jatamansi. Nagarmotha. Javitri. Ashwagandha. These are classical Ayurvedic hair botanicals — documented in Indian wellness texts for centuries and almost completely absent from US haircare formulas. <strong>This is what makes TruAyur different.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ 5 REASONS ══════ -->
+<section class="reasons">
+  <div class="w">
+    <div class="reasons-head">
+      <span class="section-eye">5 reasons it works</span>
+      <h2>What a serum should do.<br><em>What this one actually does.</em></h2>
+    </div>
+
+    <div class="reason-row">
+      <div class="reason-img"><img src="https://truayur.com/cdn/shop/files/ashwagandha-merlion-naturals.webp?v=1758178924" alt="Frizz Control"></div>
+      <div class="reason-body">
+        <div class="reason-tag">01 — Frizz Control</div>
+        <h3>Your anti-frizz serum stops working<br><em>the moment humidity hits.</em></h3>
+        <p>Silicone creates a surface layer that blocks moisture initially — but it's a temporary barrier. By afternoon, especially in humidity, it's worn off and frizz is back. TruAyur's botanical oil layer — <strong>sweet almond, sesame, lotus</strong> — nourishes the strand from within rather than just coating the outside. Hair stays smoother longer because the work is happening at the strand level, not just on the surface.</p>
+        <div class="reason-herbs">Sweet Almond Oil · Sesame Oil · Lotus Oil · Dimethiconol</div>
+      </div>
+    </div>
+
+    <div class="reason-row">
+      <div class="reason-img"><img src="https://truayur.com/cdn/shop/files/saffron-1296x728-header.webp?v=1758178924" alt="Visible Shine"></div>
+      <div class="reason-body">
+        <div class="reason-tag">02 — Visible Shine</div>
+        <h3>There's a difference between hair that<br><em>looks coated and hair that looks luminous.</em></h3>
+        <p>Heavy silicones create a flat, uniform gloss — it looks like product, not hair. <strong>Lotus oil (Nelumbo Nucifera)</strong>, traditionally prized in Ayurvedic beauty for its natural luminosity, and <strong>bitter orange oil</strong> create a different kind of shine. It catches the light the way healthy, well-nourished hair does. Polished, not plastic.</p>
+        <div class="reason-herbs">Lotus Oil · Bitter Orange · Vitamin E · Apricot Kernel Oil</div>
+      </div>
+    </div>
+
+    <div class="reason-row">
+      <div class="reason-img"><img src="https://truayur.com/cdn/shop/files/almond_oil4_725x_3c36f758-100c-4da2-9884-f2385451275e.jpg?v=1758178924" alt="Silky Softness"></div>
+      <div class="reason-body">
+        <div class="reason-tag">03 — Silky Softness</div>
+        <h3>Smooth is what you see.<br><em>Soft is what you feel.</em></h3>
+        <p>Most serums get the first. TruAyur gets both. <strong>Sweet almond oil's</strong> rich vitamin E and fatty acid content nourishes dry, rough lengths from within. <strong>Apricot kernel oil</strong> — silky, fast-absorbing — contributes to the serum's distinctly soft finish. Run your hand through your hair at 6pm. It still feels the way it felt at 7am. That's the difference.</p>
+        <div class="reason-herbs">Sweet Almond · Apricot Kernel · Sesame · Vitamin E</div>
+      </div>
+    </div>
+
+    <div class="reason-row">
+      <div class="reason-img"><img src="https://truayur.com/cdn/shop/files/Mulethi_900-8-2.jpg?v=1758178924" alt="Ayurvedic Botanicals"></div>
+      <div class="reason-body">
+        <div class="reason-tag">04 — The Botanicals</div>
+        <h3>11 herbs you won't find<br><em>anywhere else on a Sephora shelf.</em></h3>
+        <p>Ayurvedic physicians documented specific botanicals for hair care in classical Indian wellness texts — centuries before modern cosmetic chemistry existed. <strong>Jatamansi (Nardostachys Jatamansi)</strong>, a foundational Ayurvedic hair botanical. <strong>Nagarmotha (Cyperus Rotundus)</strong>, largely unknown outside the subcontinent. <strong>Ashwagandha, Calendula, Javitri</strong>. These are not label ingredients. They are what makes this formula genuinely unreplicable.</p>
+        <div class="reason-herbs">Jatamansi · Nagarmotha · Javitri · Ashwagandha · Calendula</div>
+      </div>
+    </div>
+
+    <div class="reason-row">
+      <div class="reason-img"><img src="https://truayur.com/cdn/shop/files/Black-sesame-seeds.webp?v=1758178924" alt="Second Day Hair"></div>
+      <div class="reason-body">
+        <div class="reason-tag">05 — Second-Day Hair</div>
+        <h3>Day two shouldn't mean<br><em>starting over.</em></h3>
+        <p>By day two, even well-styled hair goes rough. Dry shampoo absorbs oil but leaves hair flat and lifeless. <strong>Apply 1–2 drops of TruAyur to dry lengths</strong> — flyaways disappear, shine returns, roughness smooths. <strong>Calendula infusion</strong> and the Ayurvedic botanical complex nourish as they smooth. Second-day hair that looks like a choice, not a compromise.</p>
+        <div class="reason-herbs">Calendula · Lotus Oil · Sweet Almond · Sesame</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════ MOMENTS ══════ -->
+<section class="moments">
+  <div class="w">
+    <div class="moments-head">
+      <span class="section-eye">What a day looks like</span>
+      <h2>Morning to evening.<br><em>One serum holds.</em></h2>
+    </div>
+    <div class="moments-grid">
+      <div class="moment">
+        <div class="moment-time">7:30am · Fresh wash</div>
+        <h3>Two drops after<br>the shower.<br><em>That's it.</em></h3>
+        <p>Warm between palms, smooth through damp mid-lengths and ends. The serum base controls frizz before it starts. <strong>Hair blows out smoother, styles faster, holds longer.</strong> You're out the door in less time than it used to take to fix frizz alone.</p>
+      </div>
+      <div class="moment">
+        <div class="moment-time">2:00pm · Humidity hits</div>
+        <h3>The moment other<br>serums give up.<br><em>This one doesn't.</em></h3>
+        <p>Most serums have worn off by now. The Ayurvedic oil layer — sweet almond, lotus, sesame — keeps working after the surface layer settles. <strong>Flyaways that should have appeared haven't.</strong> Hair still looks like it did this morning. You don't reach for a hair tie.</p>
+      </div>
+      <div class="moment">
+        <div class="moment-time">Next morning · Day two</div>
+        <h3>One drop on<br>dry lengths.<br><em>Second day sorted.</em></h3>
+        <p>No wash needed. Apply one drop, smooth through the ends. <strong>Flyaways gone. Shine back. Roughness smoothed.</strong> Day two hair that looks like you made a decision about it rather than hoped for the best. This is the part dry shampoo has never been able to do.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ EDITORIAL ══════ -->
+<section class="editorial">
+  <div class="editorial-inner">
+    <div class="editorial-kicker">The TruAyur difference</div>
+    <div class="editorial-line">
+      Your anti-frizz serum is 90% silicone<br>and nothing else.<br>
+      <em>You deserved better than that.</em>
+    </div>
+    <p class="editorial-sub">11 herbs. 5,000 years of Ayurvedic hair ritual. A weightless finish your hair will actually feel. This is what the category should have been doing all along.</p>
+  </div>
+</section>
+
+<!-- ══════ INGREDIENTS ══════ -->
+<section class="ingredients">
+  <div class="w">
+    <div class="ingredients-head">
+      <span class="section-eye">What's actually inside</span>
+      <h2>All 11 herbs, oils<br><em>& botanicals.</em></h2>
+      <p>Every ingredient selected for a reason — the smoothing base, the botanical depth, or the Ayurvedic heritage that makes this formula genuinely different from anything else in the aisle.</p>
+    </div>
+    <div class="ing-grid">
+
+      <div class="ing-card">
+        <div class="ing-icon">Sweet<br>Almond</div>
+        <div class="ing-body">
+          <h4>Sweet Almond Oil</h4>
+          <div class="ing-latin">Prunus Amygdalus Dulcis</div>
+          <p>Rich in vitamin E and fatty acids — the primary softness driver. Nourishes dry lengths, reduces roughness, and makes hair feel genuinely soft rather than just smooth.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Jata-<br>mansi</div>
+        <div class="ing-body">
+          <h4>Jatamansi Extract</h4>
+          <div class="ing-latin">Nardostachys Jatamansi</div>
+          <p>A foundational Ayurvedic hair botanical, documented in classical Indian wellness texts for centuries. Almost completely absent from US haircare formulas. This is what makes this formula unreplicable.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Ashwa-<br>gandha</div>
+        <div class="ing-body">
+          <h4>Ashwagandha Extract</h4>
+          <div class="ing-latin">Withania Somnifera</div>
+          <p>Ayurveda's most revered adaptogen — recognized across 5,000 years of Indian wellness tradition. Long used in Ayurvedic hair rituals for overall hair vitality.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Nagar-<br>motha</div>
+        <div class="ing-body">
+          <h4>Nagarmotha Extract</h4>
+          <div class="ing-latin">Cyperus Rotundus</div>
+          <p>A genuine Ayurvedic botanical largely unknown outside India. Part of the heritage layer that makes TruAyur distinctly different from every Western serum in its category.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Lotus<br>Oil</div>
+        <div class="ing-body">
+          <h4>Lotus Oil</h4>
+          <div class="ing-latin">Nelumbo Nucifera</div>
+          <p>Traditionally prized in Ayurvedic beauty rituals. Contributes a natural luminosity — the kind of shine that looks like healthy hair, not like product.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Calen-<br>dula</div>
+        <div class="ing-body">
+          <h4>Calendula Infusion</h4>
+          <div class="ing-latin">Calendula Officinalis</div>
+          <p>A gentle, soothing botanical infusion long valued in plant-based care. Adds calming, nourishing depth to the formula's botanical layer.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Sesame<br>Oil</div>
+        <div class="ing-body">
+          <h4>Sesame Oil</h4>
+          <div class="ing-latin">Sesamum Indicum</div>
+          <p>The foundational carrier oil of Ayurvedic hair rituals — used for centuries as the medium through which botanical actives are delivered. Adds warmth, nourishment and sensory richness.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Javitri<br>Infusion</div>
+        <div class="ing-body">
+          <h4>Javitri Infusion</h4>
+          <div class="ing-latin">Myristica Fragrans</div>
+          <p>An aromatic Ayurvedic infusion from the outer covering of nutmeg. Rare in Western haircare, deeply rooted in Indian botanical tradition.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Apricot<br>Kernel</div>
+        <div class="ing-body">
+          <h4>Apricot Kernel Oil</h4>
+          <div class="ing-latin">Prunus Armeniaca</div>
+          <p>Silky, fast-absorbing, rich in vitamins A and E. The key reason this serum finishes without heaviness — contributes to the non-greasy, lightweight feel.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Bitter<br>Orange</div>
+        <div class="ing-body">
+          <h4>Bitter Orange Oil</h4>
+          <div class="ing-latin">Citrus Aurantium</div>
+          <p>Adds a fresh, bright aromatic lift to the formula. The reason this serum smells like something you'd reach for, not something you endure.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Vitamin<br>E</div>
+        <div class="ing-body">
+          <h4>Vitamin E</h4>
+          <div class="ing-latin">Tocopheryl Acetate</div>
+          <p>Antioxidant protection and strand sealing. Enhances the absorption of every other ingredient in the formula — and helps keep hair smooth between washes.</p>
+        </div>
+      </div>
+
+      <div class="ing-card">
+        <div class="ing-icon">Smooth-<br>ing Base</div>
+        <div class="ing-body">
+          <h4>Smoothing Complex</h4>
+          <div class="ing-latin">Cyclopentasiloxane · Dimethiconol</div>
+          <p>The modern serum base that delivers instant frizz control, slip and shine. The same technology trusted by the serums already in your bathroom — now carrying 11 botanicals with it.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════ REVIEWS ══════ -->
+<section class="reviews">
+  <div class="w">
+    <div class="reviews-head">
+      <span class="section-eye">What people are saying</span>
+      <h2>Don't take our word for it.<br><em>Take theirs.</em></h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <span class="review-tag">Frizz Control</span>
+        <blockquote>"[Replace with real customer review — frizz, flyaways, or humidity result]"</blockquote>
+        <div class="review-name">— Verified Buyer</div>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <span class="review-tag">Shine & Softness</span>
+        <blockquote>"[Replace with real customer review — shine, silky feel, or non-greasy finish]"</blockquote>
+        <div class="review-name">— Verified Buyer</div>
+      </div>
+      <div class="review">
+        <div class="review-stars">★★★★★</div>
+        <span class="review-tag">Daily Use</span>
+        <blockquote>"[Replace with real customer review — daily use, second-day hair, or manageability]"</blockquote>
+        <div class="review-name">— Verified Buyer</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ RITUAL ══════ -->
+<section class="ritual">
+  <div class="w ritual-inner">
+    <div class="ritual-copy">
+      <span class="section-eye">How to use it</span>
+      <h2>2 drops.<br>Any hair day.<br><em>Any time.</em></h2>
+      <p>No measuring. No prep. The simplest thing you'll add to your routine — and the one you'll notice most by the end of the day.</p>
+      <div class="ritual-steps">
+        <div class="rstep">
+          <span class="rstep-num">1</span>
+          <div>
+            <h4>Dispense 2–3 drops</h4>
+            <p>Use the dropper. Warm between your palms for a few seconds before applying.</p>
+          </div>
+        </div>
+        <div class="rstep">
+          <span class="rstep-num">2</span>
+          <div>
+            <h4>Apply to mid-lengths and ends</h4>
+            <p>On damp hair before styling — or on dry hair to tame flyaways and refresh shine on day two or three.</p>
+          </div>
+        </div>
+        <div class="rstep">
+          <span class="rstep-num">3</span>
+          <div>
+            <h4>Feel the difference</h4>
+            <p>Instant frizz control. Visible shine. Hair that feels silky-soft and stays manageable through the day. No grease. No residue.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ritual-img-wrap">
+      <img src="https://truayur.com/cdn/shop/files/Photoroom_20250104_170436.png?v=1758178395" alt="TruAyur 11-Herb Hair Serum">
+      <p class="ritual-img-cap">60ml · 2.02 fl.oz. · Glass dropper bottle</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ BUY BOX ══════ -->
+<section class="buybox" id="buy">
+  <div class="w">
+    <div class="buybox-inner">
+      <div class="buybox-img">
+        <img src="https://truayur.com/cdn/shop/files/Photoroom_20250104_170436.png?v=1758178395" alt="TruAyur 11-Herb Hair Serum">
+      </div>
+      <div class="buybox-copy">
+        <span class="section-eye" style="color:var(--gold);margin-bottom:18px;">TruAyur · USA</span>
+        <div class="buybox-name">11-Herb Infused<br>Hair Serum · 60ml</div>
+        <div class="buybox-price">$54.00 <del>$68.00</del></div>
+        <div class="buybox-offer">Get 20% Off + Free Gift (worth $42) on orders of $75 & above</div>
+        <ul class="buybox-list">
+          <li>Instantly smooths the appearance of frizz</li>
+          <li>Adds visible shine — leaves hair feeling silky-soft</li>
+          <li>Helps tame flyaways and improves manageability</li>
+          <li>Lightweight, non-sticky — does not feel greasy</li>
+          <li>Suitable for dry, dull and frizz-prone hair</li>
+          <li>Apply to damp or dry lengths — any hair day</li>
+        </ul>
+        <a href="#" class="buybox-cta">Add to Cart — 60ml</a>
+        <div class="buybox-meta">
+          <span class="buybox-meta-item">30-day money-back guarantee</span>
+          <span class="buybox-meta-item">Free shipping</span>
+          <span class="buybox-meta-item">Vegan · Cruelty-free</span>
+          <span class="buybox-meta-item">GMO-free</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ FAQ ══════ -->
+<section class="faq">
+  <div class="faq-inner">
+    <h2>Before you shop, <em>a few answers.</em></h2>
+
+    <div class="faq-item open">
+      <button class="faq-btn">Will this actually feel different from my current serum? <span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes — most serums give you a smooth finish that's entirely surface-level. TruAyur's botanical oil layer (sweet almond, sesame, apricot kernel, lotus) nourishes the strand rather than just coating it. By the end of the day your hair will feel softer, not just look smoother. That's the difference you'll notice first.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn">Will it feel greasy? <span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>No. The formula is specifically engineered to avoid the heaviness that makes most "natural" hair products hard to adopt. It gives a lightweight, non-sticky finish — it does not leave hair feeling oily, weighed down, or like it has product in it.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn">What's Ayurvedic about it, exactly? <span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Eleven of the ingredients — Jatamansi, Ashwagandha, Nagarmotha, Javitri, Calendula, Lotus, Sesame, Sweet Almond, Apricot Kernel, Bitter Orange, Vitamin E — are botanicals used in classical Ayurvedic hair care documented across thousands of years of Indian wellness tradition. They're in here because they work, not for the label story.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn">Can I use it on second-day hair? <span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes — it can be applied to damp or dry lengths. On dry hair, 1–2 drops through the mid-lengths and ends instantly tames flyaways, adds shine, and refreshes texture without washing. It's arguably better on day two than dry shampoo.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn">How much should I use? <span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>2–3 drops for most hair lengths. Warm between palms before applying to mid-lengths and ends. Start small — with a formula this concentrated, you can always add a drop but you can't take one away.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-btn">Is it vegan and cruelty-free? <span class="faq-icon">+</span></button>
+      <div class="faq-answer"><p>Yes. TruAyur's 11-Herb Infused Hair Serum is vegan, GMO-free, free from synthetic fragrances, and not tested on animals.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ BRAND CLOSE ══════ -->
+<section class="brand-close">
+  <div class="w">
+    <p class="brand-close-line">Ancient wisdom blends with modern aesthetics.</p>
+    <p class="brand-close-sub">TruAyur · Trusted by 1M+ globally</p>
+    <div class="brand-nums">
+      <div>
+        <div class="brand-num-n">11</div>
+        <div class="brand-num-l">Herbs & Botanicals</div>
+      </div>
+      <div>
+        <div class="brand-num-n">5,000</div>
+        <div class="brand-num-l">Years of Ayurvedic Wisdom</div>
+      </div>
+      <div>
+        <div class="brand-num-n">128</div>
+        <div class="brand-num-l">Verified Reviews</div>
+      </div>
+    </div>
+    <a href="#buy" class="brand-close-cta">Shop the Hair Serum — $54</a>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.faq-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// Mobile bottom CTA bar — shows after scrolling past hero
+(function(){
+  const bar = document.createElement('div');
+  bar.id = 'mobile-cta';
+  bar.innerHTML = '<a href="#buy">Add to Cart — $54 &rarr;</a>';
+  bar.style.cssText = [
+    'display:none',
+    'position:fixed',
+    'bottom:0','left:0','right:0',
+    'z-index:400',
+    'background:#1B2340',
+    'padding:16px 24px',
+    'text-align:center'
+  ].join(';');
+  bar.querySelector('a').style.cssText = [
+    'display:block',
+    'color:#FAFAF8',
+    'font-family:Inter,sans-serif',
+    'font-size:13px',
+    'font-weight:700',
+    'letter-spacing:0.10em',
+    'text-transform:uppercase',
+    'text-decoration:none'
+  ].join(';');
+  document.body.appendChild(bar);
+
+  function checkMobile(){ return window.innerWidth <= 480; }
+  const hero = document.querySelector('.hero');
+  const obs = new IntersectionObserver(([e]) => {
+    if(checkMobile()) bar.style.display = e.isIntersecting ? 'none' : 'block';
+  }, { threshold: 0 });
+  if(hero) obs.observe(hero);
+  window.addEventListener('resize', () => {
+    if(!checkMobile()) bar.style.display = 'none';
+  });
+})();
+</script>
+</body>
+</html>
